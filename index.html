@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>RogellFolio</title>
+    <link rel="stylesheet" href="Portfolio.css">
+    <script src="Portfolio.js" defer></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(45deg, #ff0000, #f2ff00, #4caf50, #2196f3, #ff004c);
+    background-size: 300% 300%;
+    animation: gradient-animation 10s ease infinite;
+    color: #666;
+    min-height: 100vh;
+    padding-top: 60px;
+}
+
+@keyframes gradient-animation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+
+        .container {
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 1200px;
+            margin: 2rem auto;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 1rem;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header nav {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            position: absolute;
+            right: 50px;
+            top: 30px;
+        }
+
+        header a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        header a:hover {
+            color: #00aaff;
+        }
+
+        .profile {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            align-items: center;
+            margin-top: 2rem;
+        }
+
+        .profile img {
+            max-width: 200px;
+            border-radius: 50%;
+        }
+
+        .profile-section {
+            text-align: left;
+            width: 100%;
+        }
+
+        .skills {
+            max-width: 800px;
+            margin: 3rem auto;
+            text-align: left;
+        }
+
+        .skill {
+            margin-bottom: 1.5rem;
+        }
+
+        .skill-bar {
+            width: 100%;
+            background-color: #e0e0e0;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .skill-level {
+            height: 20px;
+            border-radius: 10px;
+            text-align: right;
+            padding-right: 5px;
+            color: white;
+            line-height: 20px;
+            font-size: 0.9rem;
+        }
+
+        .html { background-color: #40393b; width: 90%; }
+        .java { background-color: #4a4e69; width: 80%; }
+        .python { background-color: #306998; width: 70%; }
+        .javascript { background-color: #f0db4f; width: 50%; }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .portfolio-item {
+            background-color: #f9f9f9;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #000;
+            color: white;
+            padding: 1.5rem 0;
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        footer a {
+            color: #00aaff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (min-width: 768px) {
+            .portfolio-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .profile {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            .profile img {
+                max-width: 300px;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .container {
+                padding: 3rem;
+            }
+
+            h1 {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Portfolio Website</h1>
+        <nav>
+            <a href="#about">About Me</a>
+            <a href="#skills">My Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>About Me</h1>
+        <div class="profile" id="about">
+            <div class="profile-section">
+                <h2>IT Student</h2>
+                <p>Hi, I’m <strong>Rogell Yevgeny Sulivan</strong>, an IT student at Western Institute of Technology. I’m 20 years old, from Guimbal, Iloilo.</p>
+            </div>
+            <img src="image9.png" alt="Portrait of Rogell Yevgeny Sulivan">
+            <div class="profile-section">
+                <h2>Front-End Designer</h2>
+                <p>I focus mainly on front-end development but also have some experience with back-end technologies.</p>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+        <h1 id="skills">My Skills</h1>
+        <div class="skills">
+            <div class="skill">
+                <div class="skill-name">HTML</div>
+                <div class="skill-bar">
+                    <div class="skill-level html">90%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">Java</div>
+                <div class="skill-bar">
+                    <div class="skill-level java">80%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">Python</div>
+                <div class="skill-bar">
+                    <div class="skill-level python">70%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">JavaScript</div>
+                <div class="skill-bar">
+                    <div class="skill-level javascript">50%</div>
+                </div>
+            </div>
+        </div>
+        I Studied almost 3 years of HTML in our university started since i was a freshmen then also Java but im mostly good at front end.
+        Last year I just learned Python but not as good like the first two and currently is the Javascript I still have to learn alot about
+        this language I know with my capacity right now its not enough and not ready for the modern world Ill strive more to make a succesful
+        Devlopment someday.
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+        <h1 id="projects">Projects</h1>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="project1.png" alt="Responsive Web Design Project">
+                <h3>Responsive Web Design</h3>
+                <p>A fully responsive website built using HTML, CSS, and JavaScript.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="project2.png" alt="E-commerce Website Project">
+                <h3>E-commerce Website</h3>
+                <p>An e-commerce platform with integrated shopping cart functionality.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="project3.png" alt="Personal Blog Project">
+                <h3>Personal Blog</h3>
+                <p>A minimalist blog with easy-to-update content.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:sulivanyevgeny@gmail.com">sulivanyevgeny@gmail.com</a></p>
+        <p>Phone: Number</p>
+        <p>Address: Guimbal, Iloilo</p>
+    </footer>
+</body>
+</html>
+
